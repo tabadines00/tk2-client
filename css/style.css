@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root {
+  --normal-font: 300;
+  --bold-font: 500;
+  --bolder-font: 700;
+  --primary-color: #ffffff;
+  --secondary-color: red;
+  --line-height: 1.7rem;
+  --transition: 0.1s ease-in;
+}
+
+/* Smooth scroll effect */
+html {
+  height: 100vh;
+  scroll-behavior: smooth;
+  /* background: url(../img/assets/cedricbgbrown.png) no-repeat 82% 80% fixed; */
+  background-color: #0E1D61;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#logoClear {
+    background:
+        url(../img/assets/SVG/logoClear.svg) 0% 80vh no-repeat, url(../img/assets/SVG/logoClear.svg) 115% 20vh no-repeat,
+        url(../img/assets/SVG/logoClear.svg) 0% 200vh no-repeat, url(../img/assets/SVG/logoClear.svg) 115% 140vh no-repeat;
+    background-size: 40%;
+}
+
+p {
+  color: var(--primary-color);
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+h1 {
+  font-family: "Arial";
+  font-size: 24px; font-style: normal;
+  font-variant: normal; font-weight: 700;
+  line-height: 26.4px;
+}
+
+h3 {
+  font-family: "Arial";
+  font-size: 14px; font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#selected {
+  border-bottom: 0.2rem solid red;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 0.2rem solid red;
+  text-decoration: none;
+} 
+
+/* Nav Bar */
+#navLogo {
+    display: inline-block;
+}
+nav {
+    background: none;
+    justify-content: left;
+    align-items: left;
+    /*box-shadow: 0px 6px 9px #2424242a;  */
+    background-color: #0E1D61;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width:100vw;
+}
+
+ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+.nav-item {
+    margin: 1rem;
+}
+
+/* Call to action button */
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.clear {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid var(--secondary-color);
+  margin-right: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.clear:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* Landing Page */
+
+.hero {
+  margin: 0 2rem;
+}
+
+.section {
+  text-align: justify;
+}
+
+h1 span {
+  padding-bottom: 5rem;
+}
+
+.intro-text .section {
+  margin: auto;
+  align-items: center;
+}
+
+/* Contact */
+
+#iglogo {
+  width: 1rem;
+}
+
+#mail {
+  width: 1rem;
+}
+
+/* Desktop Overrides */
+
+@media only screen and (min-width: 992px) {
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+  }
+
+  .section {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    /* background: url(../img/cedricbg.jpg) no-repeat 60% 89% fixed; */
+  }
+}
