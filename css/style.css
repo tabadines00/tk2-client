@@ -123,7 +123,7 @@ nav {
 .title {
     color: var(--primary-color);
     margin: auto;
-    padding-top: 6rem;
+    padding-top: 5rem;
     padding-bottom: 1rem;
     width:60%;
 }
@@ -310,6 +310,15 @@ li#landingList {
     background-color: var(--tertiary-color);
 }
 
+.mobileList {
+    display: flex;
+    flex-direction: row;
+}
+
+#landingLogo {
+    display: none;
+}
+
 /* Mobile Overrides */
 
 @media only screen and (max-width: 1050px) {
@@ -323,6 +332,10 @@ li#landingList {
         font-family: "Lato";
         font-size: 2rem; font-style: normal;
     }
+
+    .title {
+        padding-top: 3rem;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -331,36 +344,50 @@ li#landingList {
         display: none;
     }
 
+    #landingLogo {
+        display: none;
+    }
+
     .hamburger {
         display: block;
     }
 
     .landingTitle {
-        font-family: "Lato";
-        font-size: 2rem; font-style: normal;
-        font-variant: normal; font-weight: 700;
-        color: #ffffff;
+        font-size: 2rem;
     }
     
     .landingSubText {
-        font-family: 'Lato', sans-serif;
-        font-size: 1rem; font-style: normal;
-        font-variant: normal; font-weight: lighter;
-        color: #ffffff;
+        font-size: 1rem;
     }
     
     #landingList {
         display:list-item;
-        font-family: 'Lato', sans-serif;
-        font-size: 1rem; font-style: lighter;
-        font-variant: normal; font-weight: 100;
-        color: #ffffff;
-    }
-    h2 {
-        font-family: 'Lato', sans-serif;
-        font-size: 2rem; font-style: normal;
-        font-variant: normal; font-weight: 700;
-        color: #ffffff;
+        font-size: 1rem;
     }
 
+    h2 {
+        font-size: 2rem;
+    }
+
+    .content {
+        margin: 3rem auto;
+        height: 100%;
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .wideButton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline;
+    }
+
+    .mobileList {
+        flex-direction: column;
+    }
 }
