@@ -43,10 +43,24 @@
         </ul>
       </nav>
 
-    <div class="hamburger" id="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+      <div class="hamburger" id="hamburger" onclick="toggleMobileMenu(this)">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <ul class="mobile-menu">
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link" id="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a href="./services.html" class="nav-link" id="nav-link">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a href="./about.html" class="nav-link" id="nav-link">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a href="./contact.html" class="nav-link" id="selected">CONTACT</a>
+            </li>
+        </ul>
     </div>
 
     <section class="hero">
@@ -57,10 +71,6 @@
         <br>
         <p>
         Reach out to us and we will be able to get you what you need!
-    </p>
-    <p>
-        "Buy my fockin' lights"
-        - Tony Soprano
         </p>
         <br>
         <img src="./img/assets/mail.png" id="mail" />

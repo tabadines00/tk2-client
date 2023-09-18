@@ -182,10 +182,22 @@ ul {
 .hero {
     margin: 0 2rem;
     margin-bottom: 3rem;
+    width: 60%;
+    /*margin: auto; */
+    /*margin-top: 2rem; */
 }
   
 .intro-text .section {
     align-items: center;
+}
+
+.content {
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+    margin: 3rem auto;
+    height: 100%;
+    width: 70%;
 }
 
 /* Call to action button */
@@ -246,30 +258,56 @@ ul {
   width: 1rem;
 }
 
-/* Desktop Overrides */
+.hamburger {
+    display: none;
+    background-color: var(--tertiary-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width:100%;
 
-@media only screen and (min-width: 992px) {
-    .content {
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.9rem;
-        margin: 3rem auto;
-        height: 100%;
-        width: 70%;
-    }
-
-    .hero {
-        width: 60%;
-        margin: auto;
-        margin-top: 2rem;
-    }
+    padding: 1rem;
 }
 
-@media only screen and (max-width: 300px) {
-  .content {
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.9rem;
-    margin: 0 2rem;
-    height: 100%;
+    justify-content: flex-start;
+    background-color: var(--tertiary-color);
 }
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--tertiary-color);
+}
+
+/* Mobile Overrides */
+
+@media only screen and (max-width: 750px) {
+
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    
+
+
 }
