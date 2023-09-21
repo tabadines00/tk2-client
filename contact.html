@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/simple-lightbox.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -43,10 +42,19 @@
         </ul>
       </nav>
 
-      <div class="hamburger" id="hamburger" onclick="toggleMobileMenu(this)">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div class="hamburger-nav" onclick="toggleMobileMenu(this)">
+        <img
+        src="./img/assets/SVG/logo.svg"
+        alt="TK2 Logo"
+        height="30"
+        width="30"
+        id="navLogo" />
+        <h3>TK2 OUTFITTERS</h3>
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <ul class="mobile-menu">
             <li class="nav-item">
                 <a href="./index.html" class="nav-link" id="nav-link">HOME</a>

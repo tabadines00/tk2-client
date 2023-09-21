@@ -211,6 +211,10 @@ li#landingList {
     width: 70%;
 }
 
+.content * {
+    margin: auto;
+}
+
 /* Call to action button */
 
 .btn {
@@ -273,7 +277,7 @@ li#landingList {
   width: 1rem;
 }
 
-.hamburger {
+.hamburger-nav {
     display: none;
     background-color: var(--tertiary-color);
     position: sticky;
@@ -292,6 +296,7 @@ li#landingList {
     margin: 6px 0;
 }
 
+
 .open .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -305,8 +310,8 @@ li#landingList {
     position: absolute;
     top: 100%;
     left: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 94vh;
+    width: 100%;
     background-color: var(--tertiary-color);
 }
 
@@ -321,7 +326,7 @@ li#landingList {
 
 /* Mobile Overrides */
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1100px) {
     h2 {
         font-family: 'Lato', sans-serif;
         font-size: 2rem; font-style: normal;
@@ -338,18 +343,34 @@ li#landingList {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
     nav {
         display: none;
     }
 
-    #landingLogo {
-        display: none;
+    #navLogo {
+        display: block;
     }
 
-    .hamburger {
-        display: block;
+    .hamburger-nav {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        list-style-type: square;
+        color: #ffffff;
+    }
+
+    .hamburger-nav img {
+        margin: 0 5px;
+    }
+
+    .hamburger-nav h3 {
+        margin: 0 5px;
+    }
+
+    .burger {
+        margin-left: auto;
     }
 
     .landingTitle {
@@ -370,24 +391,33 @@ li#landingList {
     }
 
     .content {
-        margin: 3rem auto;
+        margin: auto;
         height: 100%;
         width: 90%;
     }
 
-}
+    .mobileList {
+        flex-direction: column;
+    }
 
-@media only screen and (max-width: 500px) {
+    .mobileList * {
+        width: 100%;
+    }
+
+    .mobileList .btn {
+        display: inline;
+    }
+
     .wideButton {
         width: 100%;
         text-align: center;
     }
 
-    .btn {
-        display: inline;
-    }
+}
 
-    .mobileList {
-        flex-direction: column;
+@media only screen and (max-width: 700px) {
+    .wideButton {
+        width: 100%;
+        text-align: center;
     }
 }
