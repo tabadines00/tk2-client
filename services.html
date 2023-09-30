@@ -13,24 +13,29 @@
 
   <body>
     <div id="logoClear">
-    <nav>
+      <nav>
         <ul>
           <li class="nav-item">
-              <a href="./index.html">
-                  <img
-                  src="./img/assets/SVG/logo.svg"
-                  alt="TK2 Logo"
-                  height="75"
-                  width="75"
-                  id="navLogo" />
-              </a>
+            <a href="./index.html">
+                <img
+                src="./img/assets/SVG/logo.svg"
+                alt="TK2 Logo"
+                height="75"
+                width="75"
+                id="navLogo" />
+            </a>
           </li>
           <li class="nav-item">
             <a href="./index.html" class="nav-link" id="nav-link">HOME</a>
           </li>
-          <li class="nav-item">
-            <a href="./services.html" class="nav-link" id="selected">SERVICES</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a href="./services.html" class="nav-link selected" id="selected">SERVICES</a>
+            <div class="dropdown-content">
+              <a class="navSection" href="#customFabrication">Custom Fabrication</a>
+              <a class="navSection" href="#vehicleUpfitting">Vehicle Upfitting</a>
+              <a class="navSection" href="#fleetManagement">Fleet Management</a>
+            </div>
+        </li>
           <li class="nav-item">
             <a href="./about.html" class="nav-link" id="nav-link"
               >ABOUT US</a>
@@ -59,8 +64,13 @@
             <li class="nav-item">
                 <a href="./index.html" class="nav-link" id="nav-link">HOME</a>
             </li>
-            <li class="nav-item">
-                <a href="./services.html" class="nav-link" id="selected">SERVICES</a>
+            <li class="dropdown nav-item">
+                <a href="./services.html" class="nav-link selected" id="selected">SERVICES</a>
+                <div class="dropdown-content">
+                  <a class="navSection" href="#customFabrication">Custom Fabrication</a>
+                  <a class="navSection" href="#vehicleUpfitting">Vehicle Upfitting</a>
+                  <a class="navSection" href="#fleetManagement">Fleet Management</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a href="./about.html" class="nav-link" id="nav-link">ABOUT US</a>
@@ -69,48 +79,58 @@
                 <a href="./contact.html" class="nav-link" id="nav-link">CONTACT</a>
             </li>
         </ul>
-    </div>
+      </div>
 
-    <section class="content">
+      <section class="content">
         <div class="intro-text">
           <div class="section">
             <h1>
               <span class="title">Services</span>
             </h1>
+
+            <div class="container">
+              <a class="anchor" id="customFabrication"></a>
+              <h2 class="title">Custom Fabrication</h2>
+            </div>
+
+            <img
+              src="./img/assets/equipment guy.png"
+              alt="TK2"
+              height="500"
+              width="500" />
+            <p>Specialty products individualized for your needs.</p>
             <br>
-            <p>
-            During the 26 years of my law enforcement career, I developed a significant experience base due to a variety of positions held at an extremely active mid-size police department. As a Police Lieutenant, one of my many ancillary responsibilities was the management of our department’s 150 vehicle fleet.  With the city’s understaffed and often overwhelmed team of mechanics, relying on third party vendors for outfitting and up-fitting services became a necessity. Now as a newly retired Police Captain, I seek to provide reliable solutions to address some of the shortcomings I found in this industry. In partnership with my wife, Maria, and former prosecutor, Kevin Kress, we created TK2 Outfitters, LLC. Consisting of a small team of highly skilled technicians and specialists, attention to detail and craftsmanship is of the utmost importance. We understand how critical it is to create a safe, reliable, and high functioning operational environment so first responders can focus on the mission of helping people.
-            </p>
+
+            <div class="container">
+              <a class="anchor" id="vehicleUpfitting"></a>
+              <h2 class="title">Vehicle Upfitting</h2>
+            </div>
+
+            <img
+              src="./img/assets/equipment guy.png"
+              alt="TK2"
+              height="500"
+              width="500" />
+            <p>Specialty products individualized for your needs.</p>
             <br>
-            <p>
-              While TK2’s initial inception stemmed from a need to provide a user friendly and reliable final product, we understand that hard-goods are not the only needs agencies may have. In addition to our outfitting services, we also provide fleet management services to include auditing, recommendations, procurement and status management. Managers of small to mid-sized agencies often shoulder the burden of juggling an excess of ancillary responsibilities. This often results in a less than optimal allocation of time and resources. It is our job to help alleviate some of that burden and create a more efficient work flow for your staff so they can focus on other important leadership duties.
-          </p>
-            <br>
-            <p>
-              To begin assisting an agency with fleet management we recommend completing an updated audit of their fleet. This can be done solely by the agency or with the assistance of TK2. Such an audit will provide an accurate accounting and serviceability status of all fleet resources. This enables decision makers the ability to more accurately determine immediate and future needs.  
-          </p>
-            <br>
-            <p>
-              We are able to provide recommendations to agencies regarding equipment and materials. TK2 is not beholden to any specific brands. We are licensed wholesalers but we are not brand specific dealers. TK2 has always found great value in speaking with end users to learn what functions and features they prefer with their emergency equipment. From there we can determine the most appropriate choices while working within budget parameters.  
-          </p>
-            <br>
-            <p>
-              We are able to determine and present the most affordable options to decision makers for vehicle and equipment procurement. Additionally, we are able to work with agencies to monitor the on-going status of their fleet to ensure all resources remain in optimal working order.
-            </p>
-            <br>
-            <p>
-              We look forward to helping your agency maintain a mission ready fleet and providing your first responders with the most reliable, effective, and intuitive emergency and/or specialty vehicle systems possible.
-            </p>
-            <br>
-            <p>
-              -Todd Tribble, Owner - info@tk2outfitters.com
-              </p>
-            <a class="btn clear" href="#">Get in touch</a>
+
+            <div class="container">
+              <a class="anchor" id="fleetManagement"></a>
+              <h2 class="title">Fleet Management</h2>
+            </div>
+
+            <img
+              src="./img/assets/equipment guy.png"
+              alt="TK2"
+              height="500"
+              width="500" />
+            <p>Specialty products individualized for your needs.</p>
+
           </div>
         </div>
       </section>
 
-      </div>
+    </div>
 	<script src="./js/index.js"></script>
   </body>
 </html>
