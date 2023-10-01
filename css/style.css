@@ -284,7 +284,6 @@ li#landingList {
 /* The dropdown container */
 .dropdown {
     float: left;
-    overflow: hidden;
 }
 
 /* Show the dropdown menu on hover */
@@ -297,21 +296,28 @@ li#landingList {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--tertiary-color);
+  background-color: #303e7a;
   min-width: 160px;
   z-index: 1;
 }
 
+.dropdown-content .open {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
+  font-size: 0.5rem;
   color: white;
-  padding: 14px 16px;
+  padding: 0.5rem;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  margin: 0.5rem; /* Important for vertical align on mobile phones */
+}
+
+.navSection {
+    margin: 1rem;
 }
 
 /* Contact */
