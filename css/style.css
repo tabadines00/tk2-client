@@ -34,6 +34,7 @@ body {
     height: 100%;
     min-width: 100%;
     background-color: var(--tertiary-color);
+    
 }
 
 #logoClear {
@@ -211,6 +212,7 @@ li#landingList {
     justify-content: space-between;
     gap: 1.9rem;
     margin: 3rem auto;
+    padding-bottom: 5rem;
     height: 100%;
     width: 70%;
 }
@@ -371,10 +373,26 @@ li#landingList {
 .mobileList {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.mobileList .half {
+    max-width: 50%;
+    
+}
+
+.mobileList .half div {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #landingLogo {
     display: none;
+}
+
+.ServiceTitle {
+    margin: 0.5rem auto;
 }
 
 /* Mobile Overrides */
@@ -397,6 +415,15 @@ li#landingList {
 
     .hero {
         width: 80%;
+    }
+
+    .mobileList div {
+        width: 50%;
+    }
+
+    .mobileList div img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -462,17 +489,41 @@ li#landingList {
         flex-direction: column;
     }
 
-    .mobileList * {
+    .mobileList div {
         width: 100%;
+        padding: 0.2rem;
+    }
+
+    .mobileList div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobileList .half {
+        max-width: 100%;
+        
+    }
+    
+    .mobileList .half div {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .mobileList .btn {
-        display: inline;
+        display: inline-block;
+        margin: 0.5rem;
     }
 
     .wideButton {
         width: 100%;
         text-align: center;
+    }
+
+    #map {
+        width: 80vw;
+        height: auto;
+        max-width: 100vw;
+        max-height: 100vw;
     }
 
 }
