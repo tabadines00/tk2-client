@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TK2 Outfitters</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Gallery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+  </head>
+
+  <body>
+    <div id="logoClear">
+    <nav>
+      <ul>
+        <li class="nav-item">
+            <a href="./index.html">
+                <img
+                src="./img/assets/SVG/logo.svg"
+                alt="TK2 Logo"
+                height="75"
+                width="75"
+                id="navLogo" />
+            </a>
+        </li>
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link" id="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="./gallery.html" class="nav-link" id="selected">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link" id="nav-link"
+            >ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact.html" class="nav-link" id="nav-link"
+            >CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hamburger-nav" onclick="toggleMobileMenu(this)">
+        <img
+        src="./img/assets/SVG/logo.svg"
+        alt="TK2 Logo"
+        height="30"
+        width="30"
+        id="navLogo" />
+        <h3>TK2 OUTFITTERS</h3>
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="mobile-menu">
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link" id="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="./gallery.html" class="nav-link" id="selected">GALLERY</a>
+            </li>
+            <li class="nav-item">
+                <a href="./about.html" class="nav-link" id="nav-link">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a href="./contact.html" class="nav-link" id="nav-link">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="content">
+      <div class="intro-text">
+        <div class="section">
+          <h1>
+            <span class="title">Gallery</span>
+          </h1>
+          <div ID="gall" data-nanogallery2='{
+            "itemsBaseURL": "http://localhost:8080/img/assets/",
+            "thumbnailWidth": "200",
+            "thumbnailHeight": "auto",
+            "thumbnailBorderVertical": 0,
+            "thumbnailBorderHorizontal": 0,
+            "colorScheme": {
+              "thumbnail": {
+                "background": "rgba(0,0,0,0)"
+              }
+            },
+            "thumbnailLabel": {
+              "position": "overImageOnBottom",
+              "display": false
+            },
+            "thumbnailAlignment": "center",
+            "thumbnailOpenImage": true
+          }'>
+          <a href="1.png" data-ngthumb="1.png" data-ngdesc="">1</a>
+          <a href="2.png" data-ngthumb="2.png" data-ngdesc="">2</a>
+          <a href="3.png" data-ngthumb="3.png" data-ngdesc="">3</a>
+          <a href="camry.png" data-ngthumb="camry.png" data-ngdesc="">1</a>
+          <a href="aviator.png" data-ngthumb="aviator.png" data-ngdesc="">2</a>
+          <a href="truck.png" data-ngthumb="truck.png" data-ngdesc="">3</a>
+    
+        </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+	<script src="./js/index.js"></script>
+  </body>
+</html>
